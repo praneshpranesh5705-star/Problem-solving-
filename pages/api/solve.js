@@ -50,7 +50,6 @@ User request: ${question || "Read the uploaded image and solve/explain it."}`;
       body: JSON.stringify({
         model: process.env.OPENAI_MODEL || "gpt-6-luna",
         input: [{ role: "user", content }],
-        temperature: 0
       })
     });
 
